@@ -1,17 +1,19 @@
-# prva_aplikacija
+# Prva aplikacija
 
-A new Flutter project.
+## Vjezba 1
 
-## Getting Started
+Projekt je izrađen u Flutteru i programskom jeziku Dart.
 
-This project is a starting point for a Flutter application.
+## Sadrzaj projekta
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter aplikacija
+- Dart program bin/provjera.dart
+- Android emulator Pixel 6
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Pokretanje Dart programa
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+dart run bin/provjera.dart
+
+## Pokretanje Flutter aplikacije
+
+flutter run
