@@ -17,3 +17,11 @@ dart run bin/provjera.dart
 ## Pokretanje Flutter aplikacije
 
 flutter run
+
+## Verzije alata
+
+- Flutter: 3.47.7 (stable)
+- Dart: 3.13.5 (stable)
+- DevTools: 2.60.0
+- Operacijski sustav: Windows 11
+- Android emulator: Pixel 6
