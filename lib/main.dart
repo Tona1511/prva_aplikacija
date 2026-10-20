@@ -20,7 +20,8 @@ class MyApp extends StatelessWidget {
             children: [
               Text('Student: Antonio Dujmović'),
               SizedBox(height: 12),
-              Text('Dart i Flutter'),
+              Text('Učim Dart i Flutter'),
+              Text('Želim naučiti izraditi vlastitu mobilnu aplikaciju.'),
             ],
           ),
         ),

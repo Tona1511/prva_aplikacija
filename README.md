@@ -36,3 +36,11 @@ Flutter analyze prijavljuje grešku jer null nije dopušten za tip String.
 Operator ?? postaje nepotreban jer String ne može imati vrijednost null.
 
 Vraćanjem tipa na String? problemi nestaju.
+
+## Razlika između Hot Reload i Hot Restart
+
+Hot Reload primjenjuje promjene u kodu bez ponovnog pokretanja aplikacije i zadržava postojeće stanje.
+
+Hot Restart ponovno pokreće Dart aplikaciju i vraća njezino stanje na početno.
+
+U ovoj vježbi uspješno sam isprobao obje mogućnosti.
