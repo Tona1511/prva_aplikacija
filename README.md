@@ -25,3 +25,14 @@ flutter run
 - DevTools: 2.60.0
 - Operacijski sustav: Windows 11
 - Android emulator: Pixel 6
+
+
+## Provjera razumijevanja 2
+
+Kada se parametar funkcije promijeni iz String? u String, Dart više ne dopušta prosljeđivanje vrijednosti null.
+
+Flutter analyze prijavljuje grešku jer null nije dopušten za tip String.
+
+Operator ?? postaje nepotreban jer String ne može imati vrijednost null.
+
+Vraćanjem tipa na String? problemi nestaju.

@@ -19,6 +19,7 @@ void main() {
   const Zadatak(naslov: 'Instalacija', zavrsen: true),
   const Zadatak(naslov: 'Git'),
   const Zadatak(naslov: 'Dart'),
+  const Zadatak(naslov: 'Prvi commit', zavrsen: true),
 ];
 
 for (final z in zadaci) {
@@ -26,6 +27,8 @@ for (final z in zadaci) {
 }
 print('Otvorenih: ${brojOtvorenih(zadaci)}');
 print(prikazNapomene(napomena));
+print(prikazNapomene(null));
+print(naslovi(zadaci));
 }
 
 class Zadatak {
@@ -41,3 +44,6 @@ int brojOtvorenih(List<Zadatak> zadaci) =>
     zadaci.where((z) => !z.zavrsen).length;
 
     String prikazNapomene(String? napomena) => napomena ?? 'Bez napomene';
+
+    List<String> naslovi(List<Zadatak> zadaci) =>
+    zadaci.where((z) => !z.zavrsen).map((z) => z.naslov).toList();
