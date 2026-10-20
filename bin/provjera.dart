@@ -1,7 +1,43 @@
+// ignore_for_file: avoid_print, equal_elements_in_set
 
 void main() {
-  // ignore: avoid_print
-  print('Vjezba 1 - Flutter i Dart');
-  // ignore: avoid_print
-  print('Program uspjesno radi!');
+  final ime = 'Antonio';
+  int brojVjezbe = 1;
+  String? napomena = 'Prvi samostalni rad';
+  final teme = <String>['Dart', 'Flutter', 'Git', 'Android'];
+  final oznake = <String>{'novo', 'novo', 'vjezba'};
+  final bodovi = <String, int>{'Ana': 80, 'Ivan': 55, 'Mia': 70};
+
+  print('Student: $ime');
+  print('Vjezba: $brojVjezbe');
+  print(napomena);
+  print(teme[0]);
+  print(oznake.length);
+  print(bodovi['Mia'] ?? 0);
+
+  final zadaci = <Zadatak>[
+  const Zadatak(naslov: 'Instalacija', zavrsen: true),
+  const Zadatak(naslov: 'Git'),
+  const Zadatak(naslov: 'Dart'),
+];
+
+for (final z in zadaci) {
+  print('${z.naslov}: ${z.oznaka()}');
 }
+print('Otvorenih: ${brojOtvorenih(zadaci)}');
+print(prikazNapomene(napomena));
+}
+
+class Zadatak {
+  final String naslov;
+  final bool zavrsen;
+
+  const Zadatak({required this.naslov, this.zavrsen = false});
+
+  String oznaka() => zavrsen ? 'Gotovo' : 'U tijeku';
+}
+
+int brojOtvorenih(List<Zadatak> zadaci) =>
+    zadaci.where((z) => !z.zavrsen).length;
+
+    String prikazNapomene(String? napomena) => napomena ?? 'Bez napomene';
